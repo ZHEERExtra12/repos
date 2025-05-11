@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="537.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pharmacy.pharmacyproject.SoldController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="824.0" style="-fx-background-color: #1D1616;">
+         <children>
+            <Label layoutX="384.0" layoutY="12.0" prefHeight="41.0" prefWidth="98.0" text="فرۆشراو" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="NRT Bold Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="756.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/white-arrow.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="65.0" prefWidth="824.0" style="-fx-background-color: #1D1616;">
+         <children>
+            <Label layoutX="384.0" layoutY="12.0" prefHeight="41.0" prefWidth="98.0" text="فرۆشراو" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="NRT Bold Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="756.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/white-arrow.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="65.0" prefHeight="473.0" prefWidth="824.0" style="-fx-background-color: #EBE8DB;">
+         <children>
+            <TableView fx:id="table" nodeOrientation="RIGHT_TO_LEFT" prefHeight="407.0" prefWidth="824.0" style="-fx-background-color: #EBE8DB;" stylesheets="@style.css">
+               <columns>
+                  <TableColumn fx:id="name" editable="false" prefWidth="112.57147216796875" sortable="false" text="ناوی دەرمان" />
+                  <TableColumn fx:id="barcode" editable="false" prefWidth="113.14288330078125" sortable="false" text="بارکۆد" />
+                  <TableColumn fx:id="quantity" editable="false" prefWidth="110.28570556640625" sortable="false" text="بڕ" />
+                  <TableColumn fx:id="date" editable="false" prefWidth="110.28570556640625" sortable="false" text="کاتی فرۆشراو" />
+                  <TableColumn fx:id="buyPrice" editable="false" prefWidth="110.28570556640625" sortable="false" text="نرخی هاتن" />
+                  <TableColumn fx:id="sellPrice" editable="false" prefWidth="110.28570556640625" sortable="false" text="نرخی فرۆشتن" />
+                  <TableColumn fx:id="profit" editable="false" prefWidth="110.28570556640625" sortable="false" text="قازانج" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

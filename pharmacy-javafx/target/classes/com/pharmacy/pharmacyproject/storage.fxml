@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="551.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pharmacy.pharmacyproject.StorageController">
+   <children>
+      <Pane layoutX="-4.0" prefHeight="65.0" prefWidth="1001.0" style="-fx-background-color: #1D1616;">
+         <children>
+            <Label layoutX="501.0" layoutY="12.0" prefHeight="41.0" prefWidth="98.0" text="کۆگا" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="NRT Bold Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="924.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/white-arrow.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </Pane>
+      <Pane layoutY="65.0" prefHeight="485.0" prefWidth="993.0" style="-fx-background-color: #EBE8DB;">
+         <children>
+            <TableView fx:id="table" nodeOrientation="RIGHT_TO_LEFT" prefHeight="407.0" prefWidth="990.0" style="-fx-background-color: #EBE8DB;" stylesheets="@style.css">
+               <columns>
+                  <TableColumn fx:id="name" editable="false" prefWidth="112.57147216796875" sortable="false" text="ناوی دەرمان" />
+                  <TableColumn fx:id="barcode" editable="false" prefWidth="113.14288330078125" sortable="false" text="بارکۆد" />
+                  <TableColumn fx:id="quantity" editable="false" prefWidth="110.28570556640625" sortable="false" text="بڕ" />
+                  <TableColumn fx:id="date" editable="false" prefWidth="110.28570556640625" sortable="false" text="کاتی داخڵکردن" />
+                  <TableColumn fx:id="expairy" editable="false" prefWidth="110.28570556640625" sortable="false" text="کاتی بەسەرچوون" />
+                  <TableColumn fx:id="buyPrice" editable="false" prefWidth="110.28570556640625" sortable="false" text="نرخی هاتن" />
+                  <TableColumn fx:id="sellPrice" editable="false" prefWidth="110.28570556640625" sortable="false" text="نرخی فرۆشتن" />
+                  <TableColumn fx:id="profit" editable="false" prefWidth="110.28570556640625" sortable="false" text="قازانج" />
+                  <TableColumn fx:id="delete" editable="false" prefWidth="110.28570556640625" sortable="false" text="سرینەوە" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

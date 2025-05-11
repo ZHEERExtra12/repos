@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pharmacy.pharmacyproject.DashboardController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="547.0" prefWidth="842.0" style="-fx-background-color: #EBE8DB;">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="83.0" prefWidth="849.0" style="-fx-background-color: #1D1616;">
+               <children>
+                  <Label layoutX="390.0" layoutY="21.0" text="نۆرینگە" textFill="WHITE">
+                     <font>
+                        <Font name="NRT Bold Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="30.0" layoutY="29.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="37.0" style="-fx-background-color: transparent;" />
+                  <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="32.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/gear.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="747.0" layoutY="508.0" text="بەکارهێنەر : ">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="14.0" layoutY="509.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_sell" layoutX="659.0" layoutY="141.0" mnemonicParsing="false" onAction="#sellForm" prefHeight="106.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: #1D1616; -fx-border-width: 2px;">
+               <graphic>
+                  <ImageView fitHeight="78.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/sell.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="689.0" layoutY="247.0" text="فرۆشتن">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_add" layoutX="479.0" layoutY="141.0" mnemonicParsing="false" onAction="#additionForm" prefHeight="106.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: #1D1616; -fx-border-width: 2px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="481.0" layoutY="247.0" text="زیادکردنی دەرمان">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_storage" layoutX="288.0" layoutY="141.0" mnemonicParsing="false" onAction="#storageForm" prefHeight="106.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: #1D1616; -fx-border-width: 2px;">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/warehouse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="330.0" layoutY="247.0" text="کۆگا">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="bten_maneg" layoutX="673.0" layoutY="312.0" mnemonicParsing="false" onAction="#manegmentForm" prefHeight="106.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: #1D1616; -fx-border-width: 2px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/management.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="705.0" layoutY="425.0" text="کارگێڕی">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_sold" layoutX="82.0" layoutY="141.0" mnemonicParsing="false" onAction="#soldForm" prefHeight="106.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: #1D1616; -fx-border-width: 2px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/sold.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="111.0" layoutY="247.0" text="فرۆشراو">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="479.0" layoutY="312.0" mnemonicParsing="false" onAction="#logout" prefHeight="106.0" prefWidth="113.0" style="-fx-background-color: transparent; -fx-border-color: #1D1616; -fx-border-width: 2px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="494.0" layoutY="425.0" text="چوونەدەرەوە">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" layoutX="659.0" layoutY="508.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="80.0">
+               <font>
+                  <Font name="NRT Bold Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="icon1" fitHeight="25.0" fitWidth="27.0" layoutX="83.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="icon2" fitHeight="25.0" fitWidth="27.0" layoutX="288.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="icon5" fitHeight="25.0" fitWidth="27.0" layoutX="673.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
